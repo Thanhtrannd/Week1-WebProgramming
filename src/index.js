@@ -10,8 +10,6 @@ if (document.readyState !== "loading") {
   });
 }
 
-let noteCounter = 0;
-
 function initializeCode() {
   const myButton = document.getElementById("my-button");
   const addNoteButton = document.getElementById("add-data");
@@ -28,7 +26,7 @@ function initializeCode() {
     let newNoteText = document.getElementById("note").value;
 
     let newNoteElem = document.createElement("li");
-    newNoteElem.innerText = ++noteCounter + ". " + newNoteText;
+    newNoteElem.innerText = newNoteText;
 
     listElem.appendChild(newNoteElem);
   });
