@@ -17,7 +17,7 @@ function initializeCode() {
   const addNoteButton = document.getElementById("add-data");
 
   myButton.addEventListener("click", function () {
-    console.log("Hello world");
+    console.log("hello world");
 
     const h1Elem = document.getElementById("sec1");
     h1Elem.innerText = "My notebook";
