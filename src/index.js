@@ -10,14 +10,12 @@ if (document.readyState !== "loading") {
   });
 }
 
-let noteCounter = 0;
-
 function initializeCode() {
   const myButton = document.getElementById("my-button");
   const addNoteButton = document.getElementById("add-data");
 
   myButton.addEventListener("click", function () {
-    console.log("Hello world");
+    console.log("hello world");
 
     const h1Elem = document.getElementById("sec1");
     h1Elem.innerText = "My notebook";
@@ -28,7 +26,7 @@ function initializeCode() {
     let newNoteText = document.getElementById("note").value;
 
     let newNoteElem = document.createElement("li");
-    newNoteElem.innerText = ++noteCounter + ". " + newNoteText;
+    newNoteElem.innerText = newNoteText;
 
     listElem.appendChild(newNoteElem);
   });
